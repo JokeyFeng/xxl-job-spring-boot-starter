@@ -1,0 +1,70 @@
+{
+  "groups": [
+    {
+      "name": "xxl-job",
+      "type": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties"
+    },
+    {
+      "name": "xxl-job.admin",
+      "type": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobAdminProperties",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties",
+      "sourceMethod": "getAdmin()"
+    },
+    {
+      "name": "xxl-job.executor",
+      "type": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobExecutorProperties",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties",
+      "sourceMethod": "getExecutor()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "xxl-job.admin.addresses",
+      "type": "java.lang.String",
+      "description": "Xxl-job admin server addresses.",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobAdminProperties",
+      "defaultValue": "http://127.0.0.1:8080/xxl-job-admin"
+    },
+    {
+      "name": "xxl-job.executor.appName",
+      "type": "java.lang.String",
+      "description": "Xxl-job executor application name.",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobExecutorProperties",
+      "defaultValue": "xxl-job-executor"
+    },
+    {
+      "name": "xxl-job.executor.ip",
+      "type": "java.lang.String",
+      "description": "Xxl-job executor registry ip.",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobExecutorProperties"
+    },
+    {
+      "name": "xxl-job.executor.port",
+      "type": "java.lang.Integer",
+      "description": "Xxl-job executor registry port.",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobExecutorProperties",
+      "defaultValue": "9999"
+    },
+    {
+      "name": "xxl-job.executor.access-token",
+      "type": "java.lang.String",
+      "description": "Xxl-job executor registry access token.",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobExecutorProperties"
+    },
+    {
+      "name": "xxl-job.executor.log-path",
+      "type": "java.lang.String",
+      "description": "Xxl-job executor log files path.",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobExecutorProperties",
+      "defaultValue": "logs/xxl-job"
+    },
+    {
+      "name": "xxl-job.executor.log-retention-days",
+      "type": "java.lang.Integer",
+      "description": "Xxl-job executor log files retention days.",
+      "sourceType": "com.jokey.bingo.xxljob.starter.properties.XxlJobProperties$JobExecutorProperties",
+      "defaultValue": "30"
+    }
+  ]
+}
