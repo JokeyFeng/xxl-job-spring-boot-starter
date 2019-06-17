@@ -18,11 +18,11 @@
 ```
 xxl-job:
   admin:
-    admin-addresses: http://localhost:8080/xxl-job-admin
+    admin-addresses: http://localhost:8080/xxl-job-admin #调度中心
   executor:
     app-name: xxl-job-spring-boot-starter-example #默认为 xxl-job-executor
     access-token: #默认为空
-    log-path: logs/applogs/xxl-job/jobhandler #默认为 logs/applogs/xxl-job/jobhandler
+    log-path: logs/applogs/xxl-job/jobhandler #默认为 logs/xxl-job
     log-retention-days: 10 #默认为 10
     ip: #默认为空
     port: 9999 #默认为 9999
