@@ -12,7 +12,7 @@
     <properties>
         <java.version>1.8</java.version>
         <lombok.version>1.18.8</lombok.version>
-        <xxl.job.version>2.0.2</xxl.job.version>
+        <xxl.job.version>2.3.0</xxl.job.version>
         <spring.boot.version>2.1.5.RELEASE</spring.boot.version>
     </properties>
 
